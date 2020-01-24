@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/fabrica/code_alchemist/CodeAlchemist/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
+            "map": [
+                {
+                    "source": "/home/fabrica/.gradle/caches/transforms-2/files-2.1/2106c54d02f8361a464d6ecb5cda951e/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        }
+    ]
+}
