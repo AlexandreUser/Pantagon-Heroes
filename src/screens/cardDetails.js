@@ -21,35 +21,45 @@ export default CardDetail = () => {
   return (
     <View style={styles.body}>
       <UserBar />
-        <View style={styles.container}>
+      <View style={styles.container}>
         <ScrollView>
-
           <View style={styles.descriptionTextContainer}>
-          <Text style={styles.descriptionTextTitle}> Lancelot </Text>
-          <Text style={styles.descriptionLevel}> Comum </Text>
+            <Text style={styles.descriptionTextTitle}> Lancelot </Text>
+            <Text style={styles.descriptionLevel}> Comum </Text>
 
-          <Card />
+            <Card />
 
             <Text style={styles.descriptionText}>
               LOREM IPSUM DOLOR ET MET LOREM IPSUM DOLOR ET METLOREM IPSUM DOLOR
               ET METLOREM IPSUM DOLOR ET METLOREM IPSUM DOLOR ET METLOREM IPSUM
               DOLOR ET METLOREM IPSUM DOLOR ET METLOREM IPSUM DOLOR ET METLOREM
-              IPSUM DOLOR ET MET
+              IPSUM DOLOR ET MET LOREM IPSUM DOLOR ET MET LOREM IPSUM DOLOR ET
+              METLOREM IPSUM DOLOR ET METLOREM IPSUM DOLOR ET METLOREM IPSUM
+              DOLOR ET METLOREM IPSUM DOLOR ET METLOREM IPSUM DOLOR ET METLOREM
+              IPSUM DOLOR ET METLOREM IPSUM DOLOR ET MET LOREM IPSUM DOLOR ET
+              MET LOREM IPSUM DOLOR ET METLOREM IPSUM DOLOR ET METLOREM IPSUM
+              DOLOR ET METLOREM IPSUM DOLOR ET METLOREM IPSUM DOLOR ET METLOREM
+              IPSUM DOLOR ET METLOREM IPSUM DOLOR ET METLOREM IPSUM DOLOR ET MET
               LOREM IPSUM DOLOR ET MET LOREM IPSUM DOLOR ET METLOREM IPSUM DOLOR
-              ET METLOREM IPSUM DOLOR ET METLOREM IPSUM DOLOR ET METLOREM IPSUM
-              DOLOR ET METLOREM IPSUM DOLOR ET METLOREM IPSUM DOLOR ET METLOREM
-              IPSUM DOLOR ET MET  LOREM IPSUM DOLOR ET MET LOREM IPSUM DOLOR ET METLOREM IPSUM DOLOR
-              ET METLOREM IPSUM DOLOR ET METLOREM IPSUM DOLOR ET METLOREM IPSUM
-              DOLOR ET METLOREM IPSUM DOLOR ET METLOREM IPSUM DOLOR ET METLOREM
-              IPSUM DOLOR ET MET  LOREM IPSUM DOLOR ET MET LOREM IPSUM DOLOR ET METLOREM IPSUM DOLOR
               ET METLOREM IPSUM DOLOR ET METLOREM IPSUM DOLOR ET METLOREM IPSUM
               DOLOR ET METLOREM IPSUM DOLOR ET METLOREM IPSUM DOLOR ET METLOREM
               IPSUM DOLOR ET MET
             </Text>
+            <View style={styles.moneyHolder}>
+              <Text style={styles.MoneyButton}>999 <Image
+                style={styles.smallImage}
+                source={require("../../assets/010-crystal.png")}
+              ></Image></Text>
+              
+            </View>
+            <TouchableOpacity onPress={() => {}}>
+              <View style={styles.buyButton}>
+                <Text style={styles.TextButton}> Comprar</Text>
+              </View>
+            </TouchableOpacity>
           </View>
-          </ScrollView>
-
-        </View>
+        </ScrollView>
+      </View>
 
       <Menu />
     </View>
@@ -57,34 +67,41 @@ export default CardDetail = () => {
 };
 
 const styles = StyleSheet.create({
-    descriptionText:{
-        marginLeft:20,
-        marginRight:20,
-        marginTop:30,
-        textAlign:"justify",
-        color:"#c2c2c2",
-        fontSize:15,
-    },
-    descriptionTextTitle:{
-        marginTop:30,
-        textAlign:"justify",
-        color:"#c2c2c2",
-        fontSize:20,
-        fontWeight:"bold"
-    },
-    descriptionLevel:{
-        marginTop:5,
-        textAlign:"justify",
-        color:"green",
-        fontSize:12,
-        fontWeight:"bold"
-    },
+ 
+  smallImage: {
+    marginTop: 10,
+    width: 30,
+    height: 30
+  },
+
+  descriptionText: {
+    marginLeft: 20,
+    marginRight: 20,
+    marginTop: 30,
+    textAlign: "justify",
+    color: "#c2c2c2",
+    fontSize: 15
+  },
+  descriptionTextTitle: {
+    marginTop: 30,
+    textAlign: "justify",
+    color: "#c2c2c2",
+    fontSize: 20,
+    fontWeight: "bold"
+  },
+  descriptionLevel: {
+    marginTop: 5,
+    textAlign: "justify",
+    fontSize: 12,
+    fontWeight: "bold",
+    color: "green"
+  },
   descriptionTextContainer: {
-    marginLeft:0,
+    marginLeft: 0,
     alignItems: "center",
     width: "100%",
     backgroundColor: "#310069",
-    borderRadius:10,
+    borderRadius: 10
   },
   TextButton: {
     fontWeight: "bold",
@@ -99,7 +116,7 @@ const styles = StyleSheet.create({
     fontSize: 20
   },
   buyButton: {
-    marginTop: 10,
+    marginBottom: 20,
     alignItems: "center",
     width: 150,
     height: 50,
@@ -119,7 +136,7 @@ const styles = StyleSheet.create({
   moneyHolder: {
     alignItems: "center",
 
-    height: 100,
+    height: 70,
     width: "100%",
     color: "black"
   },
@@ -130,8 +147,8 @@ const styles = StyleSheet.create({
   },
   container: {
     alignItems: "center",
-    width:"100%",
-    height: "81%",
+    width: "100%",
+    height: "81%"
   },
   logoImage: {
     marginTop: 20,

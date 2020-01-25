@@ -5,15 +5,21 @@ import {
   View,
   Text,
   Image,
-  TouchableOpacity
+  TouchableOpacity,
+  ShadowPropTypesIOS
 } from "react-native";
 import React, { Component } from "react";
-export default UserBar = () => {
+export default UserBar = props => {
+  let money = 0;
+  if (props.money) {
+    money = props.money;
+  }
   return (
     <>
       <View style={styles.userBar}>
         <View style={styles.spacement}></View>
-        <Text style={styles.moneyText}>1000</Text>
+        <Text style={styles.moneyText}>{money}</Text>
+
         <Image
           style={styles.smallImage}
           source={require("../../assets/010-crystal.png")}

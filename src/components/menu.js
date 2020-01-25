@@ -29,7 +29,7 @@ import {
           style={styles.iconSearch}
           source={require('../../assets/004-boss.png')}></Image>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.optionContainer} onPress={Actions.account}>
+      <TouchableOpacity onPress={Actions.fightScreen} style={styles.optionContainer} >
         <Image
           style={styles.iconUser}
           source={require('../../assets/009-crossing-swords.png')}></Image>

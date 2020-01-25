@@ -5,6 +5,7 @@ import Initial from "./src/screens/main";
 import cardChoose from "./src/screens/cardChoose";
 import deckChoose from "./src/screens/deckChoose";
 import CardDetail from "./src/screens/cardDetails";
+import FightScreen from "./src/screens/fightScreen"
 export default App = () => {
   return (
     <Router>
@@ -36,6 +37,13 @@ export default App = () => {
           component={CardDetail}
           hideNavBar={true}
         />
+        <Scene
+          key="fightScreen"
+          direction="horizontal"
+          initial={false}
+          component={FightScreen}
+          hideNavBar={true}
+      />
       </Stack>
     </Router>
   );

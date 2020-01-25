@@ -12,36 +12,41 @@ import {
 import Menu from "../components/menu";
 import UserBar from "../components/userBar";
 import React, { Component } from "react";
-import Carousel from "simple-carousel-react-native"
+import Carousel from "simple-carousel-react-native";
+import Card from "../components/cardHolder";
 export default cardChoose = () => {
   function _renderCards() {
     let qtd_cards = [0, 1, 2, 3, 4, 5];
     return qtd_cards.map(card => {
-      return (
-        <Image
-          style={styles.cardgame}
-          source={require("../../assets/moldura.png")}
-        ></Image>
-      );
+      return <Card style={styles.cardgame} />;
     });
   }
   return (
     <View style={styles.body}>
       <UserBar />
       <View style={styles.container}>
-        <Carousel  backgroundColor={"transparent"} width={400} height={400} showBubbles={false}>
+        <Carousel
+          backgroundColor={"transparent"}
+          width={400}
+          height={400}
+          showBubbles={false}
+        >
           {_renderCards()}
         </Carousel>
 
         <View style={styles.moneyHolder}>
-        <Text style={styles.MoneyButton}>999</Text>
+          <Text style={styles.MoneyButton}>999</Text>
+          <Image
+            style={styles.smallImage}
+            source={require("../../assets/010-crystal.png")}
+          ></Image>
+        </View>
 
-          <TouchableOpacity onPress={()=>{}}>
+        <TouchableOpacity onPress={() => {}}>
           <View style={styles.buyButton}>
             <Text style={styles.TextButton}> Comprar</Text>
           </View>
-          </TouchableOpacity>
-        </View>
+        </TouchableOpacity>
       </View>
       <Menu />
     </View>
@@ -49,6 +54,11 @@ export default cardChoose = () => {
 };
 
 const styles = StyleSheet.create({
+  smallImage: {
+    marginTop: 10,
+    width: 30,
+    height: 30
+  },
   TextButton: {
     fontWeight: "bold",
     marginTop: 10,
@@ -58,10 +68,11 @@ const styles = StyleSheet.create({
   MoneyButton: {
     fontWeight: "bold",
     marginTop: 10,
+    marginRight:5,
     color: "yellow",
     fontSize: 20
   },
-  buyButton:{
+  buyButton: {
     marginTop: 10,
     alignItems: "center",
     width: 150,
@@ -79,21 +90,21 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 20, height: 20 },
     backgroundColor: "#310069"
   },
-  moneyHolder:{
+  moneyHolder: {
+    flexDirection:"row",
     alignItems: "center",
 
-    height:100,
-    width:"100%",
-    color:"black",
+    height: 40,
+    width: "100%",
+    color: "black"
   },
   cardgame: {
-    marginLeft:70,
+    marginLeft: 70,
     marginTop: 10,
     width: 250,
     height: 400
   },
   container: {
-    
     alignItems: "center",
     height: "81%"
   },
