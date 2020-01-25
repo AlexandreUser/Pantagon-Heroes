@@ -13,7 +13,7 @@ import Menu from "../components/menu";
 import UserBar from "../components/userBar";
 import React, { Component } from "react";
 import Carousel from "simple-carousel-react-native"
-export default menuScreen = () => {
+export default cardChoose = () => {
   function _renderCards() {
     let qtd_cards = [0, 1, 2, 3, 4, 5];
     return qtd_cards.map(card => {
@@ -32,8 +32,11 @@ export default menuScreen = () => {
         <Carousel  backgroundColor={"transparent"} width={400} height={400} showBubbles={false}>
           {_renderCards()}
         </Carousel>
+
         <View style={styles.moneyHolder}>
-          <TouchableOpacity onPress={()=>{alert("Comprou")}}>
+        <Text style={styles.MoneyButton}>999</Text>
+
+          <TouchableOpacity onPress={()=>{}}>
           <View style={styles.buyButton}>
             <Text style={styles.TextButton}> Comprar</Text>
           </View>
@@ -52,8 +55,14 @@ const styles = StyleSheet.create({
     color: "white",
     fontSize: 20
   },
+  MoneyButton: {
+    fontWeight: "bold",
+    marginTop: 10,
+    color: "yellow",
+    fontSize: 20
+  },
   buyButton:{
-    marginTop: 40,
+    marginTop: 10,
     alignItems: "center",
     width: 150,
     height: 50,
@@ -68,9 +77,11 @@ const styles = StyleSheet.create({
 
     elevation: 24,
     shadowOffset: { width: 20, height: 20 },
-    backgroundColor: "#3c0080"
+    backgroundColor: "#310069"
   },
   moneyHolder:{
+    alignItems: "center",
+
     height:100,
     width:"100%",
     color:"black",
@@ -84,7 +95,7 @@ const styles = StyleSheet.create({
   container: {
     
     alignItems: "center",
-    height: "83%"
+    height: "81%"
   },
   logoImage: {
     marginTop: 20,

@@ -10,25 +10,34 @@ import {
 import React, { Component } from "react";
 export default UserBar = () => {
   return (
-    <View style={styles.userBar}>
-      <View style={styles.spacement}></View>
-      <Text style={styles.moneyText}>1000</Text>
-      <Image
-        style={styles.smallImage}
-        source={require("../../assets/010-crystal.png")}
-      ></Image>
-    </View>
+    <>
+      <View style={styles.userBar}>
+        <View style={styles.spacement}></View>
+        <Text style={styles.moneyText}>1000</Text>
+        <Image
+          style={styles.smallImage}
+          source={require("../../assets/010-crystal.png")}
+        ></Image>
+      </View>
+      <View style={styles.line}></View>
+    </>
   );
 };
 
 const styles = StyleSheet.create({
+  line: {
+    backgroundColor: "#211230",
+    width: "100%",
+    height: "1%",
+    opacity: 0.5
+  },
   spacement: {
     width: "75%"
   },
   moneyText: {
     marginRight: 5,
     fontWeight: "bold",
-    color: "white",
+    color: "yellow",
     marginTop: 14,
     fontSize: 15
   },

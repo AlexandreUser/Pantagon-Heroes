@@ -11,13 +11,15 @@ import {
   import {Actions} from "react-native-router-flux"
   export default Menu = () => {
     return (
+      <>
+      <View style={styles.line}></View>
       <View style={styles.container}>
-      <TouchableOpacity onPress={Actions.home} style={styles.optionContainer}>
+      <TouchableOpacity onPress={Actions.cardScreen} style={styles.optionContainer}>
         <Image
           style={styles.iconHome}
           source={require('../../assets/067-treasure-1.png')}></Image>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.optionContainer}>
+      <TouchableOpacity onPress={Actions.deckScreen} style={styles.optionContainer}>
         <Image
           style={styles.iconGift}
           source={require('../../assets/002-adventure.png')}></Image>
@@ -33,10 +35,17 @@ import {
           source={require('../../assets/009-crossing-swords.png')}></Image>
       </TouchableOpacity>
     </View>
+    </>
     );
   };
   
   const styles = StyleSheet.create({
+    line:{
+      backgroundColor: '#211230',
+      width:"100%",
+      height:"1%",
+      opacity:0.5,
+    },
     container: {
 
       backgroundColor: '#3c0080',
