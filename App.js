@@ -1,12 +1,14 @@
 import React, {useState, useEffect} from 'react';
 import {Router, Scene, Stack, Actions} from 'react-native-router-flux';
 import {StyleSheet} from 'react-native';
-import Card from './src/screens/IdleClicker';
+import Initial from './src/screens/main';
+import menuScreen from "./src/screens/menuScreen"
 export default App = () => {
   return (
     <Router>
       <Stack key="root" headerLayoutPreset="center">
-        <Scene key="login" initial={true} component={Card} hideNavBar={true} />
+        <Scene key="login" initial={true} component={Initial} hideNavBar={true} />
+        <Scene key="menuScreen" initial={false} component={menuScreen} hideNavBar={true}/>
       </Stack>
     </Router>
   );
