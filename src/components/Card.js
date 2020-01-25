@@ -8,38 +8,32 @@ import {
   TouchableOpacity
 } from "react-native";
 import React, { Component } from "react";
-import Card from "./cardHolder";
-export default Deck = () => {
+export default Card = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.deckHolder}>
-        <Card style={styles.cardgame} />
-        <Card style={styles.cardgame} />
-        <Card style={styles.cardgame} />
-      </View>
-      <View style={styles.deckHolder}>
-        <Card style={styles.cardgame} />
-        <Card style={styles.cardgame} />
-        <Card style={styles.cardgame} />
-      </View>
+        <Image
+          style={styles.cardgame}
+          source={require("../../assets/moldura.png")}
+        ></Image>
+       
     </View>
   );
 };
 
 const styles = StyleSheet.create({
+
   cardgame: {
     marginTop: 10,
     marginLeft: 10,
     marginRight: 10,
-    width: 70,
-    height: 110
+    width: 190,
+    height: 300
   },
   container: {
-    marginLeft: 40,
     marginTop: 30,
     alignItems: "center",
-    width: 280,
-    height: 250,
+    width: 220,
+    height: 320,
     borderRadius: 10,
     shadowColor: "#000",
     shadowOffset: {

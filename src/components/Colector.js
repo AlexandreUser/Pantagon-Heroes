@@ -8,6 +8,8 @@ import {
   TouchableOpacity
 } from "react-native";
 import React, { Component } from "react";
+import Card from "./cardHolder";
+
 export default Colector = () => {
   return (
     <>
@@ -17,79 +19,34 @@ export default Colector = () => {
             <Text style={styles.TextButton}>Usar</Text>
           </View>
         </TouchableOpacity>
-      
       </View>
       <View style={styles.container}>
         <View style={styles.deckHolder}>
-          <Image
-            style={styles.cardgame}
-            source={require("../../assets/moldura.png")}
-          ></Image>
-          <Image
-            style={styles.cardgame}
-            source={require("../../assets/moldura.png")}
-          ></Image>
-          <Image
-            style={styles.cardgame}
-            source={require("../../assets/moldura.png")}
-          ></Image>
+          <Card style={styles.cardgame} />
+          <Card style={styles.cardgame} />
+          <Card style={styles.cardgame} />
         </View>
         <View style={styles.deckHolder}>
-          <Image
-            style={styles.cardgame}
-            source={require("../../assets/moldura.png")}
-          ></Image>
-          <Image
-            style={styles.cardgame}
-            source={require("../../assets/moldura.png")}
-          ></Image>
-          <Image
-            style={styles.cardgame}
-            source={require("../../assets/moldura.png")}
-          ></Image>
+          <Card style={styles.cardgame} />
+          <Card style={styles.cardgame} />
+          <Card style={styles.cardgame} />
         </View>
         <View style={styles.deckHolder}>
-          <Image
-            style={styles.cardgame}
-            source={require("../../assets/moldura.png")}
-          ></Image>
-          <Image
-            style={styles.cardgame}
-            source={require("../../assets/moldura.png")}
-          ></Image>
-          <Image
-            style={styles.cardgame}
-            source={require("../../assets/moldura.png")}
-          ></Image>
+          <Card style={styles.cardgame} />
+          <Card style={styles.cardgame} />
+          <Card style={styles.cardgame} />
         </View>
         <View style={styles.deckHolder}>
-          <Image
-            style={styles.cardgame}
-            source={require("../../assets/moldura.png")}
-          ></Image>
-          <Image
-            style={styles.cardgame}
-            source={require("../../assets/moldura.png")}
-          ></Image>
-          <Image
-            style={styles.cardgame}
-            source={require("../../assets/moldura.png")}
-          ></Image>
+          <Card style={styles.cardgame} />
+          <Card style={styles.cardgame} />
+          <Card style={styles.cardgame} />
         </View>
         <View style={styles.deckHolder}>
-          <Image
-            style={styles.cardgame}
-            source={require("../../assets/moldura.png")}
-          ></Image>
-          <Image
-            style={styles.cardgame}
-            source={require("../../assets/moldura.png")}
-          ></Image>
-          <Image
-            style={styles.cardgame}
-            source={require("../../assets/moldura.png")}
-          ></Image>
+          <Card style={styles.cardgame} />
+          <Card style={styles.cardgame} />
+          <Card style={styles.cardgame} />
         </View>
+    
       </View>
     </>
   );
