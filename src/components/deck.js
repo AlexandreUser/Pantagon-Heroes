@@ -54,6 +54,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#310069"
   },
   deckHolder: {
+      marginTop:5,
     flexDirection: "row"
   }
 });

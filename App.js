@@ -1,15 +1,29 @@
 import React, { useState, useEffect } from "react";
-import { Router, Scene, Stack, Actions } from "react-native-router-flux";
+import {
+  Router,
+  Scene,
+  Stack,
+  Actions,
+  ActionConst
+} from "react-native-router-flux";
+import { StackViewStyleInterpolator } from "react-navigation-stack";
+
 import { StyleSheet } from "react-native";
 import Initial from "./src/screens/main";
 import cardChoose from "./src/screens/cardChoose";
 import deckChoose from "./src/screens/deckChoose";
 import CardDetail from "./src/screens/cardDetails";
-import FightScreen from "./src/screens/fightScreen"
+import FightScreen from "./src/screens/fightScreen";
 export default App = () => {
   return (
     <Router>
-      <Stack key="root" headerLayoutPreset="center">
+      <Stack
+        key="root"
+        headerLayoutPreset="center"
+        transitionConfig={() => ({
+          screenInterpolator: StackViewStyleInterpolator.forHorizontal
+        })}
+      >
         <Scene
           key="login"
           initial={true}
@@ -17,6 +31,8 @@ export default App = () => {
           hideNavBar={true}
         />
         <Scene
+          tabs={true}
+          tabBarStyle={{ backgroundColor: "#FFFFFF" }}
           key="deckScreen"
           direction="horizontal"
           initial={false}
@@ -24,6 +40,8 @@ export default App = () => {
           hideNavBar={true}
         />
         <Scene
+          tabs={true}
+          tabBarStyle={{ backgroundColor: "#FFFFFF" }}
           key="cardScreen"
           direction="horizontal"
           initial={false}
@@ -31,6 +49,8 @@ export default App = () => {
           hideNavBar={true}
         />
         <Scene
+          tabs={true}
+          tabBarStyle={{ backgroundColor: "#FFFFFF" }}
           key="detailScreen"
           direction="horizontal"
           initial={false}
@@ -38,12 +58,14 @@ export default App = () => {
           hideNavBar={true}
         />
         <Scene
+          tabs={true}
+          tabBarStyle={{ backgroundColor: "#FFFFFF" }}
           key="fightScreen"
           direction="horizontal"
           initial={false}
           component={FightScreen}
           hideNavBar={true}
-      />
+        />
       </Stack>
     </Router>
   );
