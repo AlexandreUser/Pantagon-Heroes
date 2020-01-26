@@ -20,22 +20,23 @@ export default deckChoose = () => {
   return (
     <View style={styles.body}>
       <UserBar />
-      <View style={styles.container}>
-          <ScrollView>
+      <ScrollView>
+        <View style={styles.container}>
           <Carousel
-          backgroundColor={"transparent"}
-          width={400}
-          height={290}
-          showBubbles={false}
-        >
-          <Deck />
-          <Deck />
-          <Deck />
-        </Carousel>
-        <Colector />
-          </ScrollView>
-      
-      </View>
+            backgroundColor={"transparent"}
+            width={380}
+            height={290}
+            showBubbles={false}
+          >
+            <Deck />
+            <Deck />
+            <Deck />
+          </Carousel>
+        </View>
+        <View style={styles.containerForCollector}>
+          <Colector />
+        </View>
+      </ScrollView>
 
       <Menu />
     </View>
@@ -87,7 +88,9 @@ const styles = StyleSheet.create({
   },
   container: {
     alignItems: "center",
-    height: "81%"
+    height: "30%"
+  },
+  containerForCollector: {
   },
   logoImage: {
     marginTop: 20,

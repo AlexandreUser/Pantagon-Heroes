@@ -36,7 +36,7 @@ export default FightScreen = () => {
 
 const styles = StyleSheet.create({
   enemy: {
-    marginTop: 250,
+    marginTop: "60%",
     width: 200,
     height: 330
   },
