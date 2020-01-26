@@ -46,7 +46,6 @@ export default Colector = () => {
           <Card style={styles.cardgame} />
           <Card style={styles.cardgame} />
         </View>
-    
       </View>
     </>
   );
@@ -60,12 +59,9 @@ const styles = StyleSheet.create({
     fontSize: 20
   },
   holdButtons: {
-    marginLeft: 95,
-    alignItems: "center",
-    flexDirection: "row"
+    marginLeft:"28%",
   },
   button: {
-    marginLeft: 10,
     marginTop: 0,
     alignItems: "center",
     width: 150,
@@ -85,17 +81,17 @@ const styles = StyleSheet.create({
   },
   cardgame: {
     marginTop: 10,
-    marginLeft: 10,
+    marginLeft: 5,
     marginRight: 10,
     width: 70,
     height: 110
   },
   container: {
-    marginLeft: 40,
-    marginTop: 20,
+    marginLeft:"10%",
+    marginTop: 30,
     alignItems: "center",
     width: 280,
-    height: 620,
+    height: 670,
     borderRadius: 10,
     shadowColor: "#000",
     shadowOffset: {
@@ -110,7 +106,9 @@ const styles = StyleSheet.create({
     backgroundColor: "#310069"
   },
   deckHolder: {
-    marginTop:5,
+    marginLeft:10,
+    marginTop: 10,
+    marginRight:0,
     flexDirection: "row"
   }
 });

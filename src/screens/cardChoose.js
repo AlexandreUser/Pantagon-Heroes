@@ -27,7 +27,7 @@ export default cardChoose = () => {
       <View style={styles.container}>
         <Carousel
           backgroundColor={"transparent"}
-          width={400}
+          width={380}
           height={400}
           showBubbles={false}
         >
