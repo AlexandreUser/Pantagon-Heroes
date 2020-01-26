@@ -24,12 +24,12 @@ import {
           style={styles.iconGift}
           source={require('../../assets/002-adventure.png')}></Image>
       </TouchableOpacity>
-      <TouchableOpacity onPress={Actions.search} style={styles.optionContainer}>
+      <TouchableOpacity onPress={Actions.fightScreen} style={styles.optionContainer}>
         <Image
           style={styles.iconSearch}
-          source={require('../../assets/004-boss.png')}></Image>
+          source={require('../../assets/006-character.png')}></Image>
       </TouchableOpacity>
-      <TouchableOpacity onPress={Actions.fightScreen} style={styles.optionContainer} >
+      <TouchableOpacity  style={styles.optionContainer} >
         <Image
           style={styles.iconUser}
           source={require('../../assets/009-crossing-swords.png')}></Image>
@@ -44,7 +44,7 @@ import {
       backgroundColor: '#211230',
       width:"100%",
       height:"1%",
-      opacity:0.5,
+      opacity:1,
     },
     container: {
 

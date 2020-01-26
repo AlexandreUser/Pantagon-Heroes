@@ -5,27 +5,36 @@ import {
   View,
   Text,
   Image,
-  TouchableOpacity
+  TouchableOpacity,
+  ImageBackground
 } from "react-native";
 import React, { Component } from "react";
 export default Card = () => {
   return (
     <View style={styles.container}>
-        <Image
+      <ImageBackground
+        style={styles.cardgameInside}
+        source={require("../../assets/Archer.png")}
+      >
+        <ImageBackground
           style={styles.cardgame}
           source={require("../../assets/moldura.png")}
-        ></Image>
-       
+        ></ImageBackground>
+      </ImageBackground>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-
+  cardgameInside: {
+      marginTop:20,
+      marginLeft:10,
+    width: 180,
+    height: 250
+  },
   cardgame: {
-    marginTop: 10,
-    marginLeft: 10,
-    marginRight: 10,
+    marginTop: -10,
+    marginLeft: -10,
     width: 190,
     height: 300
   },

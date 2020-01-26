@@ -17,6 +17,12 @@ export default UserBar = props => {
   return (
     <>
       <View style={styles.userBar}>
+        <TouchableOpacity>
+          <Image
+            style={styles.smallImage}
+            source={require("../../assets/022-game-development.png")}
+          ></Image>
+        </TouchableOpacity>
         <View style={styles.spacement}></View>
         <Text style={styles.moneyText}>{money}</Text>
 
@@ -48,10 +54,12 @@ const styles = StyleSheet.create({
     fontSize: 15
   },
   smallImage: {
+    marginLeft: 5,
     marginTop: 10,
     width: 30,
     height: 30
   },
+
   userBar: {
     flexDirection: "row",
     width: "100%",

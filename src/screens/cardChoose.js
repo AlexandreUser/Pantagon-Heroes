@@ -18,7 +18,7 @@ export default cardChoose = () => {
   function _renderCards() {
     let qtd_cards = [0, 1, 2, 3, 4, 5];
     return qtd_cards.map(card => {
-      return <Card style={styles.cardgame} />;
+      return <Card big={true} style={styles.cardgame} />;
     });
   }
   return (
@@ -54,6 +54,12 @@ export default cardChoose = () => {
 };
 
 const styles = StyleSheet.create({
+  moldura:{
+    marginLeft: -10,
+    marginTop: 0,
+    width: 260,
+    height: 420
+  },
   smallImage: {
     marginTop: 10,
     width: 30,
@@ -99,9 +105,9 @@ const styles = StyleSheet.create({
     color: "black"
   },
   cardgame: {
-    marginLeft: 70,
-    marginTop: 10,
-    width: 250,
+    marginLeft: 80,
+    marginTop: 30,
+    width: 240,
     height: 400
   },
   container: {
