@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
   },
   container: {
     marginLeft: 40,
-    marginTop: 10,
+    marginTop: 20,
     alignItems: "center",
     width: 280,
     height: 620,
@@ -110,6 +110,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#310069"
   },
   deckHolder: {
+    marginTop:5,
     flexDirection: "row"
   }
 });

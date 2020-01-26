@@ -14,17 +14,17 @@ import {
       <>
       <View style={styles.line}></View>
       <View style={styles.container}>
-      <TouchableOpacity onPress={Actions.cardScreen} style={styles.optionContainer}>
+      <TouchableOpacity onPress={() =>{Actions.replace("cardScreen")}} style={styles.optionContainer}>
         <Image
           style={styles.iconHome}
           source={require('../../assets/067-treasure-1.png')}></Image>
       </TouchableOpacity>
-      <TouchableOpacity onPress={Actions.deckScreen} style={styles.optionContainer}>
+      <TouchableOpacity onPress={() =>{Actions.replace("deckScreen")}} style={styles.optionContainer}>
         <Image
           style={styles.iconGift}
           source={require('../../assets/002-adventure.png')}></Image>
       </TouchableOpacity>
-      <TouchableOpacity onPress={Actions.fightScreen} style={styles.optionContainer}>
+      <TouchableOpacity onPress={() => {Actions.replace("fightScreen")}} style={styles.optionContainer}>
         <Image
           style={styles.iconSearch}
           source={require('../../assets/006-character.png')}></Image>
