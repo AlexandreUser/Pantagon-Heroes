@@ -90,8 +90,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     height: "30%"
   },
-  containerForCollector: {
-  },
+  containerForCollector: {},
   logoImage: {
     marginTop: 20,
     width: 250,

@@ -24,8 +24,6 @@ export default FightScreen = () => {
               style={styles.enemy}
               source={require("../../assets/attack.gif")}
             />
-
-            
           </TouchableOpacity>
         </View>
         <Menu />
