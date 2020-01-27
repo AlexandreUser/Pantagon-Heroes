@@ -14,6 +14,8 @@ import cardChoose from "./src/screens/cardChoose";
 import deckChoose from "./src/screens/deckChoose";
 import CardDetail from "./src/screens/cardDetails";
 import FightScreen from "./src/screens/fightScreen";
+import CompanyScreen from "./src/screens/companyScreen";
+import LoadingScreen from "./src/screens/loadingScreen";
 export default App = () => {
   return (
     <Router>
@@ -25,8 +27,20 @@ export default App = () => {
         })}
       >
         <Scene
-          key="login"
+          key="companyScreen"
           initial={true}
+          component={CompanyScreen}
+          hideNavBar={true}
+        />
+        <Scene
+          key="loadingScreen"
+          initital={false}
+          component={LoadingScreen}
+          hideNavBar={true}
+        />
+        <Scene
+          key="login"
+          initial={false}
           component={Initial}
           hideNavBar={true}
         />

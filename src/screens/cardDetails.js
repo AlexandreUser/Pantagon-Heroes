@@ -46,11 +46,13 @@ export default CardDetail = () => {
               IPSUM DOLOR ET MET
             </Text>
             <View style={styles.moneyHolder}>
-              <Text style={styles.MoneyButton}>999 <Image
-                style={styles.smallImage}
-                source={require("../../assets/010-crystal.png")}
-              ></Image></Text>
-              
+              <Text style={styles.MoneyButton}>
+                999{" "}
+                <Image
+                  style={styles.smallImage}
+                  source={require("../../assets/010-crystal.png")}
+                ></Image>
+              </Text>
             </View>
             <TouchableOpacity onPress={() => {}}>
               <View style={styles.buyButton}>
@@ -67,7 +69,6 @@ export default CardDetail = () => {
 };
 
 const styles = StyleSheet.create({
- 
   smallImage: {
     marginTop: 10,
     width: 30,
