@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     fontSize: 20
   },
   holdButtons: {
-    marginLeft:"28%",
+    alignSelf: "center"
   },
   button: {
     marginTop: 0,
@@ -81,13 +81,13 @@ const styles = StyleSheet.create({
   },
   cardgame: {
     marginTop: 10,
-    marginLeft: 5,
+    alignSelf: "center",
     marginRight: 10,
     width: 70,
     height: 110
   },
   container: {
-    marginLeft:"10%",
+    alignSelf: "center",
     marginTop: 30,
     alignItems: "center",
     width: 280,
@@ -106,9 +106,9 @@ const styles = StyleSheet.create({
     backgroundColor: "#310069"
   },
   deckHolder: {
-    marginLeft:10,
+    alignSelf: "center",
     marginTop: 10,
-    marginRight:0,
+    marginRight: 0,
     flexDirection: "row"
   }
 });
