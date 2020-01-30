@@ -10,10 +10,11 @@ import { StackViewStyleInterpolator } from "react-navigation-stack";
 
 import { StyleSheet } from "react-native";
 import Initial from "./src/screens/main";
-import cardChoose from "./src/screens/cardChoose";
-import deckChoose from "./src/screens/deckChoose";
+import cardChoose from "./src/screens/cardScreen";
+import deckChoose from "./src/screens/deckScreen";
 import CardDetail from "./src/screens/cardDetails";
 import FightScreen from "./src/screens/fightScreen";
+import initialScreen from "./src/screens/initialScreen"
 export default App = () => {
   return (
     <Router>
@@ -26,7 +27,7 @@ export default App = () => {
       >
         <Scene
           key="login"
-          initial={true}
+          initial={false}
           component={Initial}
           hideNavBar={true}
         />
@@ -64,6 +65,13 @@ export default App = () => {
           direction="horizontal"
           initial={false}
           component={FightScreen}
+          hideNavBar={true}
+        />
+        <Scene
+          key="initialScreen"
+          direction="horizontal"
+          initial={true}
+          component={initialScreen}
           hideNavBar={true}
         />
       </Stack>

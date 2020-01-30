@@ -91,7 +91,6 @@ const styles = StyleSheet.create({
     marginTop: 30,
     alignItems: "center",
     width: 280,
-    height: 670,
     borderRadius: 10,
     shadowColor: "#000",
     shadowOffset: {
