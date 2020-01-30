@@ -54,7 +54,7 @@ export default cardChoose = () => {
 };
 
 const styles = StyleSheet.create({
-  moldura:{
+  moldura: {
     marginLeft: -10,
     marginTop: 0,
     width: 260,
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
   MoneyButton: {
     fontWeight: "bold",
     marginTop: 10,
-    marginRight:5,
+    marginRight: 5,
     color: "yellow",
     fontSize: 20
   },
@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#310069"
   },
   moneyHolder: {
-    flexDirection:"row",
+    flexDirection: "row",
     alignItems: "center",
 
     height: 40,

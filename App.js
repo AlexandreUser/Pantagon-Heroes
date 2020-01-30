@@ -14,7 +14,8 @@ import cardChoose from "./src/screens/cardScreen";
 import deckChoose from "./src/screens/deckScreen";
 import CardDetail from "./src/screens/cardDetails";
 import FightScreen from "./src/screens/fightScreen";
-import initialScreen from "./src/screens/initialScreen"
+import CompanyScreen from "./src/screens/companyScreen";
+import LoadingScreen from "./src/screens/loadingScreen";
 export default App = () => {
   return (
     <Router>
@@ -25,6 +26,18 @@ export default App = () => {
           screenInterpolator: StackViewStyleInterpolator.forHorizontal
         })}
       >
+        <Scene
+          key="companyScreen"
+          initial={true}
+          component={CompanyScreen}
+          hideNavBar={true}
+        />
+        <Scene
+          key="loadingScreen"
+          initital={false}
+          component={LoadingScreen}
+          hideNavBar={true}
+        />
         <Scene
           key="login"
           initial={false}

@@ -92,14 +92,7 @@ const styles = StyleSheet.create({
 
     height: "30%"
   },
-  container: {
-    width: "100%",
-    height: "81%"
-  },
-  containerForCollector: {
-
-    height: "30%"
-  },
+  containerForCollector: {},
   logoImage: {
     marginTop: 20,
     width: 250,

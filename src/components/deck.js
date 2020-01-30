@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     height: 110
   },
   container: {
-    marginLeft:"10%",
+    alignSelf: "center",
     marginTop: 30,
     alignItems: "center",
     width: 280,
@@ -54,8 +54,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#310069"
   },
   deckHolder: {
-      marginLeft:10,
-      marginTop:5,
+    marginLeft: 10,
+    marginTop: 5,
     flexDirection: "row"
   }
 });
