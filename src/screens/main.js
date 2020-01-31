@@ -22,7 +22,7 @@ export default Initial = () => {
         style={styles.logoImage}
       ></Image>
       <View style={styles.container}>
-        <TouchableOpacity onPress={Actions.fightScreen}>
+        <TouchableOpacity onPress={Actions.initialScreen}>
           <View style={styles.button}>
             <Text style={styles.TextButton}>Entrar</Text>
           </View>

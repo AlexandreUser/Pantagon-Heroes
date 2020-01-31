@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/fabrica/Jobs/Pantagon-Heroes/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml",
+            "outputFile": "/home/alexandrinho/Jobs/CodeAlchemist/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/fabrica/.gradle/caches/transforms-2/files-2.1/2106c54d02f8361a464d6ecb5cda951e/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "source": "/home/alexandrinho/.gradle/caches/transforms-2/files-2.1/fe6695a06d90a27c1c149254e29bf4b2/res/values-h720dp-v13/values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

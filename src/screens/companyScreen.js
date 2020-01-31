@@ -4,7 +4,7 @@ import { Actions } from "react-native-router-flux";
 export default CompanyScreen = () => {
   setTimeout(function() {
     Actions.replace("loadingScreen");
-  }, 15000);
+  }, 5000);
   return (
     <View style={styles.body}>
       <Image

@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { Actions } from "react-native-router-flux";
 export default LoadingScreen = () => {
   setTimeout(function() {
-    Actions.replace("fightScreen");
+    Actions.replace("initialScreen");
   }, 5000);
   return (
     <View style={styles.body}>

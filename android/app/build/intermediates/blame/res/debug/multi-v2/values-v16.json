@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "/home/fabrica/Jobs/Pantagon-Heroes/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "outputFile": "/home/alexandrinho/Jobs/CodeAlchemist/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/home/fabrica/.gradle/caches/transforms-2/files-2.1/2106c54d02f8361a464d6ecb5cda951e/res/values-v16/values-v16.xml",
+                    "source": "/home/alexandrinho/.gradle/caches/transforms-2/files-2.1/5fb13a5ab3aaf33f719c5e1dbbeec014/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/home/alexandrinho/.gradle/caches/transforms-2/files-2.1/fe6695a06d90a27c1c149254e29bf4b2/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "/home/fabrica/.gradle/caches/transforms-2/files-2.1/ede6a1e727f94150f89c89eda96567cb/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]

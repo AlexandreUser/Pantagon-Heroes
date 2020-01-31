@@ -12,8 +12,8 @@ import Card from "./cardHolder";
 
 export default Colector = () => {
   return (
-    <>
-      <View style={styles.holdButtons}>
+    <View>
+          <View style={styles.holdButtons}>
         <TouchableOpacity>
           <View style={styles.button}>
             <Text style={styles.TextButton}>Usar</Text>
@@ -47,7 +47,8 @@ export default Colector = () => {
           <Card style={styles.cardgame} />
         </View>
       </View>
-    </>
+    </View>
+  
   );
 };
 
@@ -59,9 +60,11 @@ const styles = StyleSheet.create({
     fontSize: 20
   },
   holdButtons: {
-    marginLeft:"28%",
   },
   button: {
+    alignSelf:"center",
+    backgroundColor:"white",
+    alignContent:"center",
     marginTop: 0,
     alignItems: "center",
     width: 150,
@@ -81,17 +84,15 @@ const styles = StyleSheet.create({
   },
   cardgame: {
     marginTop: 10,
-    marginLeft: 5,
     marginRight: 10,
+    marginLeft:10,
     width: 70,
     height: 110
   },
   container: {
-    marginLeft:"10%",
     marginTop: 30,
     alignItems: "center",
     width: 280,
-    height: 670,
     borderRadius: 10,
     shadowColor: "#000",
     shadowOffset: {
@@ -106,9 +107,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#310069"
   },
   deckHolder: {
-    marginLeft:10,
-    marginTop: 10,
-    marginRight:0,
-    flexDirection: "row"
+    alignSelf: "center",
+    flexDirection: "row",
   }
 });
