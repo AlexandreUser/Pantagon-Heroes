@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Jan 30 21:58:11 BRST 2020
+#Thu Jan 30 23:25:50 BRST 2020
 60.set=NATIVE_RESOURCE
 52.set=NATIVE_RESOURCE
 53.base=/home/alexandrinho/Jobs/CodeAlchemist/android/app/build/intermediates/transforms/mergeJniLibs/debug/0

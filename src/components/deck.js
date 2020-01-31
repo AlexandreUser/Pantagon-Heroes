@@ -29,15 +29,15 @@ export default Deck = () => {
 const styles = StyleSheet.create({
   cardgame: {
     marginTop: 10,
-    marginLeft: 5,
     marginRight: 10,
+    marginLeft:10,
     width: 70,
     height: 110
   },
   container: {
-    alignSelf: "center",
     marginTop: 30,
     alignItems: "center",
+
     width: 280,
     height: 250,
     borderRadius: 10,

@@ -22,19 +22,12 @@ export default deckChoose = () => {
       <UserBar />
       <View style={styles.container}>
         <ScrollView>
-          <View style={styles.containerForDeck}>
-            <Carousel
-              backgroundColor={"transparent"}
-              width={380}
-              height={290}
-              showBubbles={false}
-            >
+          <View style={styles.container}>
+            <View style={styles.separatorDeck}>
+            
               <Deck />
-              <Deck />
-              <Deck />
-            </Carousel>
-          </View>
-          <View style={styles.containerForCollector}>
+            </View>
+
             <Colector />
           </View>
         </ScrollView>
@@ -46,6 +39,9 @@ export default deckChoose = () => {
 };
 
 const styles = StyleSheet.create({
+  separatorDeck:{
+    marginBottom:20,
+  },
   TextButton: {
     fontWeight: "bold",
     marginTop: 10,
@@ -76,23 +72,17 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 20, height: 20 },
     backgroundColor: "#3c0080"
   },
-  moneyHolder: {
-    alignItems: "center",
 
-    height: 100,
-    width: "100%",
-    color: "black"
-  },
   cardgame: {
     marginTop: 10,
     width: 250,
     height: 400
   },
-  containerForDeck: {
 
-    height: "30%"
+  container: {
+    alignItems: "center",
+    height: "81%"
   },
-  containerForCollector: {},
   logoImage: {
     marginTop: 20,
     width: 250,
@@ -101,7 +91,9 @@ const styles = StyleSheet.create({
   },
   body: {
     backgroundColor: "#280154",
+    alignContent: "center",
     alignItems: "center",
+    alignSelf: "center",
     width: "100%",
     height: "100%"
   }
