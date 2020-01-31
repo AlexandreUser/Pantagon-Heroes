@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-#Sun Jan 26 17:58:50 BRST 2020
+#Thu Jan 30 21:58:11 BRST 2020
 base.0=/home/alexandrinho/Jobs/CodeAlchemist/android/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
-=======
-#Mon Jan 27 12:21:23 BRT 2020
-base.0=/home/fabrica/Jobs/Pantagon-Heroes/android/app/build/intermediates/transforms/dexMerger/debug/0
->>>>>>> 9c34b5d744f47fb385f247fb42d3ac6c8582c6e4
 renamed.0=classes.dex
-path.0=classes.dex

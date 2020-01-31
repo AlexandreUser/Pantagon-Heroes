@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/fabrica/Jobs/Pantagon-Heroes/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gu/values-gu.xml",
+            "outputFile": "/home/alexandrinho/Jobs/CodeAlchemist/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gu/values-gu.xml",
             "map": [
                 {
-                    "source": "/home/fabrica/.gradle/caches/transforms-2/files-2.1/2106c54d02f8361a464d6ecb5cda951e/res/values-gu/values-gu.xml",
+                    "source": "/home/alexandrinho/.gradle/caches/transforms-2/files-2.1/fe6695a06d90a27c1c149254e29bf4b2/res/values-gu/values-gu.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/fabrica/.gradle/caches/transforms-2/files-2.1/ede6a1e727f94150f89c89eda96567cb/res/values-gu/values-gu.xml",
+                    "source": "/home/alexandrinho/.gradle/caches/transforms-2/files-2.1/5fb13a5ab3aaf33f719c5e1dbbeec014/res/values-gu/values-gu.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

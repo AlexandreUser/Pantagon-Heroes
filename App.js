@@ -83,7 +83,7 @@ export default App = () => {
         <Scene
           key="initialScreen"
           direction="horizontal"
-          initial={true}
+          initial={false}
           component={initialScreen}
           hideNavBar={true}
         />
