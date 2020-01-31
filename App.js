@@ -29,7 +29,7 @@ export default App = () => {
       >
         <Scene
           key="companyScreen"
-          initial={false}
+          initial={true}
           component={CompanyScreen}
           hideNavBar={true}
         />
@@ -50,7 +50,7 @@ export default App = () => {
           tabBarStyle={{ backgroundColor: "#FFFFFF" }}
           key="deckScreen"
           direction="horizontal"
-          initial={true}
+          initial={false}
           component={deckChoose}
           hideNavBar={true}
         />
