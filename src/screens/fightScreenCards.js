@@ -1,15 +1,16 @@
 import { StyleSheet, View } from "react-native";
 import Menu from "../components/menu";
 import UserBar from "../components/userBar";
-import React, { Component,useState } from "react";
+import React, { Component, useState } from "react";
 import Card from "../components/CardNoInteractive";
-import Draggable from "react-native-draggable";
+import Holder from "../components/cardPlacement";
 export default fightSceneScreen = () => {
-  const [cardId, setCardId] = useState(0)
-  function handleTouch(id){
-    console.log(id)
-    setCardId(id)
-
+  const [cardId, setCardId] = useState(0);
+  function handleTouch(id) {
+    if (id !== 0) {
+      console.log(id);
+      setCardId(id);
+    }
   }
   return (
     <View style={styles.body}>
@@ -20,16 +21,68 @@ export default fightSceneScreen = () => {
         <View style={styles.line}></View>
         <View style={styles.playerSide}>
           <View style={styles.cardPlacement}>
-            <View style={styles.cardSlot}>
-              <View style={styles.internSlot}>
-              </View>
-            </View>
+            <Holder
+              active={false}
+              id={0}
+              onclicked={() => {
+                handleTouch(cardId);
+              }}
+            />
+            <Holder
+              active={false}
+              id={1}
+              onclicked={() => {
+                handleTouch(cardId);
+              }}
+            />
+            <Holder
+              active={false}
+              id={2}
+              onclicked={() => {
+                handleTouch(cardId);
+              }}
+            />
+            <Holder
+              active={false}
+              id={3}
+              onclicked={() => {
+                handleTouch(cardId);
+              }}
+            />
           </View>
           <View style={styles.deckHolder}>
-            <Card id={1} clicked={false} onclicked={(id)=>{handleTouch(id)}} style={styles.cardgame} />
-            <Card id={2} clicked={false} onclicked={(id)=>{handleTouch(id)}} style={styles.cardgame} />
-            <Card id={3} clicked={false} onclicked={(id)=>{handleTouch(id)}} style={styles.cardgame} />
-            <Card id={4} clicked={false} onclicked={(id)=>{handleTouch(id)}} style={styles.cardgame} />
+            <Card
+              id={1}
+              clicked={false}
+              onclicked={id => {
+                handleTouch(id);
+              }}
+              style={styles.cardgame}
+            />
+            <Card
+              id={2}
+              clicked={false}
+              onclicked={id => {
+                handleTouch(id);
+              }}
+              style={styles.cardgame}
+            />
+            <Card
+              id={3}
+              clicked={false}
+              onclicked={id => {
+                handleTouch(id);
+              }}
+              style={styles.cardgame}
+            />
+            <Card
+              id={4}
+              clicked={false}
+              onclicked={id => {
+                handleTouch(id);
+              }}
+              style={styles.cardgame}
+            />
           </View>
         </View>
       </View>
