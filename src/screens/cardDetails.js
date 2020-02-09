@@ -1,21 +1,15 @@
 import {
-  SafeAreaView,
   StyleSheet,
   ScrollView,
   View,
   Text,
-  StatusBar,
-  ImageBackground,
   Image,
   TouchableOpacity
 } from "react-native";
 import Menu from "../components/menu";
 import UserBar from "../components/userBar";
-import Deck from "../components/deck";
-import Colector from "../components/Colector";
 
 import React, { Component } from "react";
-import Carousel from "simple-carousel-react-native";
 import Card from "../components/Card";
 export default CardDetail = () => {
   return (

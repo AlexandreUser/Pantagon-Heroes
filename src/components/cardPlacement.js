@@ -1,16 +1,12 @@
 import {
-  SafeAreaView,
   StyleSheet,
-  ImageBackground,
-  ScrollView,
   View,
-  Text,
-  Image,
   TouchableOpacity
 } from "react-native";
 import React, { Component, useState } from "react";
 import Card from "../components/CardInsideHolder";
 export default Holder = props => {
+
   const MyId = props.id;
   const [isActive, setActive] = useState(props.active);
 
