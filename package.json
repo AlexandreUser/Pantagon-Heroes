@@ -10,9 +10,13 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "import": "0.0.6",
     "mem": ">=4.0.0",
     "react": "^16.9.0",
     "react-native": "0.61.5",
+    "react-native-draggable": "^3.0.0",
+    "react-native-draggable-flatlist": "^2.2.0",
+    "react-native-easy-dnd": "^1.0.2",
     "react-native-gesture-handler": "^1.5.3",
     "react-native-reanimated": "^1.7.0",
     "react-native-router-flux": "^4.2.0",

@@ -1,4 +1,4 @@
-import { StyleSheet, View, Image, Text, ActivityIndicator } from "react-native";
+import { StyleSheet, View, Image, Text, ActivityIndicator,Dimensions } from "react-native";
 import React, { Component } from "react";
 import { Actions } from "react-native-router-flux";
 export default LoadingScreen = () => {
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   logoImage: {
-    marginTop: 200,
+    marginTop:  Math.round(Dimensions.get('window').height/3),
     width: 400,
     height: 150,
     marginBottom: 100

@@ -1,11 +1,7 @@
 import {
-  SafeAreaView,
   StyleSheet,
-  ScrollView,
   View,
   Text,
-  StatusBar,
-  ImageBackground,
   Image,
   TouchableOpacity
 } from "react-native";
@@ -18,7 +14,7 @@ export default cardChoose = () => {
   function _renderCards() {
     let qtd_cards = [0, 1, 2, 3, 4, 5];
     return qtd_cards.map(card => {
-      return <Card big={true} style={styles.cardgame} />;
+      return <Card key={0} big={true} style={styles.cardgame} />;
     });
   }
   return (
@@ -26,6 +22,7 @@ export default cardChoose = () => {
       <UserBar />
       <View style={styles.container}>
         <Carousel
+          key={0}
           backgroundColor={"transparent"}
           width={380}
           height={400}
@@ -112,7 +109,7 @@ const styles = StyleSheet.create({
   },
   container: {
     alignItems: "center",
-    height: "81%"
+    height: "80%"
   },
   logoImage: {
     marginTop: 20,

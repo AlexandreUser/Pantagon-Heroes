@@ -9,7 +9,8 @@ import {
 } from "react-native";
 import React, { Component } from "react";
 import Card from "./cardHolder";
-export default Deck = () => {
+export default Deck = (props) => {
+
   return (
     <View style={styles.container}>
       <View style={styles.deckHolder}>
@@ -30,14 +31,14 @@ const styles = StyleSheet.create({
   cardgame: {
     marginTop: 10,
     marginRight: 10,
-    marginLeft:10,
+    marginLeft: 10,
     width: 70,
     height: 110
   },
   container: {
+    alignSelf: "center",
     marginTop: 30,
     alignItems: "center",
-
     width: 280,
     height: 250,
     borderRadius: 10,
@@ -48,7 +49,6 @@ const styles = StyleSheet.create({
     },
     shadowOpacity: 0.58,
     shadowRadius: 16.0,
-
     elevation: 24,
     shadowOffset: { width: 20, height: 20 },
     backgroundColor: "#310069"

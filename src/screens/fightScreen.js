@@ -3,7 +3,7 @@ import {
   View,
   ImageBackground,
   Image,
-  TouchableOpacity
+  TouchableOpacity,Dimensions
 } from "react-native";
 import Menu from "../components/menu";
 import UserBar from "../components/userBar";
@@ -34,7 +34,7 @@ export default FightScreen = () => {
 
 const styles = StyleSheet.create({
   enemy: {
-    marginTop: "60%",
+    marginTop:  Math.round(Dimensions.get('window').height/3),
     width: 200,
     height: 330
   },
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
   container: {
     alignItems: "center",
     width: "100%",
-    height: "81%"
+    height: "80%"
   },
   containerScreen: {
     alignItems: "center",

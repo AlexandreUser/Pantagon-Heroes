@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
   userBar: {
     flexDirection: "row",
     width: "100%",
-    height: "7%",
+    height: 50,
     backgroundColor: "#3c0080"
   }
 });

@@ -3,11 +3,6 @@ import {
   StyleSheet,
   ScrollView,
   View,
-  Text,
-  StatusBar,
-  ImageBackground,
-  Image,
-  TouchableOpacity
 } from "react-native";
 import Menu from "../components/menu";
 import UserBar from "../components/userBar";
@@ -15,32 +10,26 @@ import Deck from "../components/deck";
 import Colector from "../components/Colector";
 
 import React, { Component } from "react";
-import Carousel from "simple-carousel-react-native";
 export default deckChoose = () => {
   return (
     <View style={styles.body}>
       <UserBar />
-      <View style={styles.container}>
-        <ScrollView>
-          <View style={styles.container}>
+        <ScrollView style={styles.container}>
             <View style={styles.separatorDeck}>
-            
-              <Deck />
+              <Deck quantity={1} />
             </View>
 
             <Colector />
-          </View>
         </ScrollView>
-      </View>
+        <Menu />
 
-      <Menu />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  separatorDeck:{
-    marginBottom:20,
+  separatorDeck: {
+    marginBottom: 20
   },
   TextButton: {
     fontWeight: "bold",
@@ -80,9 +69,11 @@ const styles = StyleSheet.create({
   },
 
   container: {
-    alignItems: "center",
-    height: "81%"
+    minHeight:"80%",
+    width: "100%",
+    height: "80%"
   },
+ 
   logoImage: {
     marginTop: 20,
     width: 250,
