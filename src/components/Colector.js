@@ -77,7 +77,6 @@ const styles = StyleSheet.create({
     },
     shadowOpacity: 0.58,
     shadowRadius: 16.0,
-
     elevation: 24,
     shadowOffset: { width: 20, height: 20 },
     backgroundColor: "#310069"
@@ -91,6 +90,8 @@ const styles = StyleSheet.create({
   },
   container: {
     marginTop: 30,
+    alignSelf: "center",
+
     alignItems: "center",
     width: 280,
     borderRadius: 10,
@@ -101,7 +102,6 @@ const styles = StyleSheet.create({
     },
     shadowOpacity: 0.58,
     shadowRadius: 16.0,
-
     elevation: 24,
     shadowOffset: { width: 20, height: 20 },
     backgroundColor: "#310069"

@@ -29,7 +29,7 @@ import {
           style={styles.iconSearch}
           source={require('../../assets/006-character.png')}></Image>
       </TouchableOpacity>
-      <TouchableOpacity  style={styles.optionContainer} >
+      <TouchableOpacity onPress={()=>{Actions.replace("fightSceneScreen")}} style={styles.optionContainer} >
         <Image
           style={styles.iconUser}
           source={require('../../assets/009-crossing-swords.png')}></Image>
@@ -43,14 +43,14 @@ import {
     line:{
       backgroundColor: '#211230',
       width:"100%",
-      height:"1%",
+      height:3,
       opacity:1,
     },
     container: {
 
       backgroundColor: '#3c0080',
       width: '100%',
-      height: 71,
+      height: 75,
       flexDirection: 'row',
       justifyContent: 'space-between',
       paddingLeft: '10%',

@@ -17,6 +17,7 @@ import FightScreen from "./src/screens/fightScreen";
 import CompanyScreen from "./src/screens/companyScreen";
 import LoadingScreen from "./src/screens/loadingScreen";
 import initialScreen from "./src/screens/initialScreen";
+import fightSceneScreen from "./src/screens/fightScreenCards"
 export default App = () => {
   return (
     <Router>
@@ -86,6 +87,13 @@ export default App = () => {
           direction="horizontal"
           initial={false}
           component={initialScreen}
+          hideNavBar={true}
+        />
+        <Scene
+          key="fightSceneScreen"
+          direction="horizontal"
+          initial={true}
+          component={fightSceneScreen}
           hideNavBar={true}
         />
       </Stack>
