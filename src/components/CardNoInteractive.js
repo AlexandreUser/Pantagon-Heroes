@@ -14,7 +14,7 @@ export default Card = props => {
   if (props.big) {
     alpha = true;
   }
-  const [isClicked, setClicked] = useState(false);
+  const [isClicked, setClicked] = useState(props.clicked);
   cards = [
     require("../../assets/Archer.png"),
     require("../../assets/Aurora.png"),
@@ -25,7 +25,7 @@ export default Card = props => {
   return (
     <TouchableOpacity
       onPress={() => {
-        console.log(isClicked);
+        props.onclicked(props.id)
         setClicked(!isClicked);
       }}
     >

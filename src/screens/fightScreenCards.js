@@ -1,10 +1,16 @@
 import { StyleSheet, View } from "react-native";
 import Menu from "../components/menu";
 import UserBar from "../components/userBar";
-import React, { Component } from "react";
+import React, { Component,useState } from "react";
 import Card from "../components/CardNoInteractive";
 import Draggable from "react-native-draggable";
 export default fightSceneScreen = () => {
+  const [cardId, setCardId] = useState(0)
+  function handleTouch(id){
+    console.log(id)
+    setCardId(id)
+
+  }
   return (
     <View style={styles.body}>
       <UserBar />
@@ -13,20 +19,17 @@ export default fightSceneScreen = () => {
         <View style={styles.enemySide}></View>
         <View style={styles.line}></View>
         <View style={styles.playerSide}>
-          <View style={styles.cardPlacement}></View>
+          <View style={styles.cardPlacement}>
+            <View style={styles.cardSlot}>
+              <View style={styles.internSlot}>
+              </View>
+            </View>
+          </View>
           <View style={styles.deckHolder}>
-          <Draggable>
-              <Card style={styles.cardgame} />
-            </Draggable>
-            <Draggable>
-              <Card style={styles.cardgame} />
-            </Draggable>
-            <Draggable>
-              <Card style={styles.cardgame} />
-            </Draggable>
-            <Draggable>
-              <Card style={styles.cardgame} />
-            </Draggable>
+            <Card id={1} clicked={false} onclicked={(id)=>{handleTouch(id)}} style={styles.cardgame} />
+            <Card id={2} clicked={false} onclicked={(id)=>{handleTouch(id)}} style={styles.cardgame} />
+            <Card id={3} clicked={false} onclicked={(id)=>{handleTouch(id)}} style={styles.cardgame} />
+            <Card id={4} clicked={false} onclicked={(id)=>{handleTouch(id)}} style={styles.cardgame} />
           </View>
         </View>
       </View>
@@ -36,7 +39,22 @@ export default fightSceneScreen = () => {
 };
 
 const styles = StyleSheet.create({
+  internSlot: {
+    width: 60,
+    height: 80,
+    backgroundColor: "#280154"
+  },
+  cardSlot: {
+    margin: 5,
+    padding: 10,
+    width: 80,
+    height: 100,
+    borderRadius: 10,
+    backgroundColor: "#4b065c"
+  },
   cardPlacement: {
+    flex: 0,
+    flexDirection: "row",
     width: "100%",
     height: "50%"
   },
