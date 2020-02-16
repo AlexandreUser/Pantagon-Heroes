@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/alexandrinho/Jobs/CodeAlchemist/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-et/values-et.xml",
+            "outputFile": "/home/alexandrinho/Jobs/CodeAlchemist/mobile/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-et/values-et.xml",
             "map": [
                 {
                     "source": "/home/alexandrinho/.gradle/caches/transforms-2/files-2.1/5fb13a5ab3aaf33f719c5e1dbbeec014/res/values-et/values-et.xml",

@@ -1,4 +1,4 @@
-#Thu Jan 30 23:25:49 BRST 2020
-base.0=/home/alexandrinho/Jobs/CodeAlchemist/android/app/build/intermediates/transforms/dexMerger/debug/0
+#Sun Feb 16 15:02:00 BRT 2020
+base.0=/home/alexandrinho/Jobs/CodeAlchemist/mobile/android/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex
