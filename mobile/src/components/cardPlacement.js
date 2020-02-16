@@ -1,28 +1,26 @@
-import {
-  StyleSheet,
-  View,
-  TouchableOpacity
-} from "react-native";
+import { StyleSheet, View, TouchableOpacity, AsyncStorage } from "react-native";
 import React, { Component, useState } from "react";
 import Card from "../components/CardInsideHolder";
 export default Holder = props => {
-
-  const MyId = props.id;
+  const [myId, setMyId] = useState(props.id);
   const [isActive, setActive] = useState(props.active);
 
   return (
     <TouchableOpacity
-      onPress={() => {
-        setActive(!isActive);
-        props.onclicked(props.id,isActive);
-
+      onPress={async () => {
+        let result = await AsyncStorage.getItem("cardId");
+        if (result !== "0") {
+          setMyId(Number(result));
+          setActive(!isActive);
+          props.onclicked(props.id, isActive);
+        }
       }}
     >
       <View style={styles.cardSlot}>
         <View style={styles.internSlot}>
           {isActive && (
             <>
-              <Card style={styles.cardgame} id={MyId} />
+              <Card style={styles.cardgame} id={myId} />
             </>
           )}
         </View>
