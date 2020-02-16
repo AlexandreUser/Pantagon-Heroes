@@ -10,6 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "import": "0.0.6",
     "mem": ">=4.0.0",
     "react": "^16.9.0",
