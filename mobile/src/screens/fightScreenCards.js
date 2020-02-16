@@ -1,4 +1,4 @@
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, AsyncStorage } from "react-native";
 import Menu from "../components/menu";
 import UserBar from "../components/userBar";
 import React, { Component, useState } from "react";
@@ -6,12 +6,14 @@ import Card from "../components/CardNoInteractive";
 import Holder from "../components/cardPlacement";
 import HolderReverse from "../components/cardPlacementReverse";
 export default fightSceneScreen = () => {
-  const [cardId, setCardId] = useState(0);
+  const [cardId, setCardId] = useState(null);
+
   function handleTouch(id) {
-    if (id !== 0) {
-      console.log(id);
-      setCardId(id);
-    }
+    console.log(id);
+    AsyncStorage.setItem("cardId", id.toString());
+
+    setCardId(id);
+    return id;
   }
   return (
     <View style={styles.body}>
@@ -39,18 +41,17 @@ export default fightSceneScreen = () => {
               style={styles.cardgame}
             />
             <Card
-              id={4}
+              id={3}
               clicked={false}
               onclicked={id => {}}
               style={styles.cardgame}
             />
-             <Card
-              id={4}
+            <Card
+              id={2}
               clicked={false}
               onclicked={id => {}}
               style={styles.cardgame}
             />
-            
           </View>
           <View style={styles.cardPlacementReverse}>
             <HolderReverse active={false} id={0} />
@@ -93,14 +94,6 @@ export default fightSceneScreen = () => {
           </View>
           <View style={styles.deckHolder}>
             <Card
-              id={1}
-              clicked={false}
-              onclicked={id => {
-                handleTouch(id);
-              }}
-              style={styles.cardgame}
-            />
-            <Card
               id={2}
               clicked={false}
               onclicked={id => {
@@ -118,6 +111,14 @@ export default fightSceneScreen = () => {
             />
             <Card
               id={4}
+              clicked={false}
+              onclicked={id => {
+                handleTouch(id);
+              }}
+              style={styles.cardgame}
+            />
+            <Card
+              id={1}
               clicked={false}
               onclicked={id => {
                 handleTouch(id);

@@ -9,7 +9,7 @@ import {
   ImageBackground
 } from "react-native";
 import React, { Component } from "react";
-export default Card = () => {
+export default Card = props => {
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -27,8 +27,8 @@ export default Card = () => {
 
 const styles = StyleSheet.create({
   cardgameInside: {
-      marginTop:20,
-      marginLeft:10,
+    marginTop: 20,
+    marginLeft: 10,
     width: 180,
     height: 250
   },

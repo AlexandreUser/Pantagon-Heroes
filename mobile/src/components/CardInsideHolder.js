@@ -4,23 +4,22 @@ import {
   ImageBackground,
   ScrollView,
   View,
-  Text,
-  Image,
-  TouchableOpacity
+  AsyncStorage
 } from "react-native";
-import React, { Component, useState } from "react";
+import React, { Component, useState, useEffect } from "react";
 export default Card = props => {
   let alpha = false;
   if (props.big) {
     alpha = true;
   }
   cards = [
+    0,
     require("../../assets/Archer.png"),
     require("../../assets/Aurora.png"),
     require("../../assets/Galeo.jpg"),
     require("../../assets/demon.gif")
   ];
-  chooseCard = cards[Math.floor(Math.random() * cards.length)];
+  chooseCard = cards[props.id];
   return (
     <View style={props.style}>
       <ImageBackground style={styles.cardgame_inside} source={chooseCard}>
@@ -37,8 +36,7 @@ const styles = StyleSheet.create({
   isNotHoved: {
     marginTop: 0
   },
-  isHoved: {
-  },
+  isHoved: {},
   cardgame_inside: {
     marginTop: -10,
     width: "92%",

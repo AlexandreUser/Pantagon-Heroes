@@ -4,8 +4,7 @@ import {
   ImageBackground,
   ScrollView,
   View,
-  Text,
-  Image,
+  AsyncStorage,
   TouchableOpacity
 } from "react-native";
 import React, { Component, useState } from "react";
@@ -16,20 +15,21 @@ export default Card = props => {
   }
   const [isClicked, setClicked] = useState(props.clicked);
   cards = [
+    0,
     require("../../assets/Archer.png"),
     require("../../assets/Aurora.png"),
     require("../../assets/Galeo.jpg"),
     require("../../assets/demon.gif")
   ];
-  chooseCard = cards[Math.floor(Math.random() * cards.length)];
+  chooseCard = cards[props.id];
   return (
     <TouchableOpacity
       onPress={() => {
-        props.onclicked(props.id)
+        props.onclicked(props.id);
         setClicked(!isClicked);
       }}
     >
-      <View style={isClicked?styles.isHoved:styles.isNotHoved}>
+      <View style={isClicked ? styles.isHoved : styles.isNotHoved}>
         <View style={props.style}>
           <ImageBackground style={styles.cardgame_inside} source={chooseCard}>
             <ImageBackground
