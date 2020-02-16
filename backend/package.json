@@ -1,0 +1,22 @@
+{
+  "name": "pantagon-heroes-api",
+  "version": "0.0.1",
+  "description": "the controller api of the game pantagon-heroes",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "game",
+    "api",
+    "node",
+    "typescript"
+  ],
+  "author": "Alexandre Vieira, Bruno Guilherme",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.1",
+    "redis": "^3.0.2"
+  }
+}
