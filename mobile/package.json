@@ -19,7 +19,7 @@
     "react-native-draggable-flatlist": "^2.2.0",
     "react-native-easy-dnd": "^1.0.2",
     "react-native-gesture-handler": "^1.5.3",
-    "react-native-reanimated": "^1.7.0",
+    "react-native-reanimated": "^2.10.0",
     "react-native-router-flux": "^4.2.0",
     "react-native-snap-carousel": "^3.8.4",
     "simple-carousel-react-native": "^1.0.2"
