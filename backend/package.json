@@ -15,7 +15,7 @@
   "author": "Alexandre Vieira, Bruno Guilherme",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "mongoose": "^5.9.1",
     "redis": "^3.0.2"
   }
